@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{% block content %}
+<br><br><br>
+<div class="Center_the_boi Blue_Box2">
+    <form action="{% url "AGE" %}" method="GET">
+        {% csrf_token %}
+        <label>
+            <p></p>
+            <input type="number" name="Burger">
+            <input type="number" name="Fries">
+            <input type="number" name="Drink">
+        </label>
+        <button>Confirm Order</button>
+    </form>
+    <p>Age in 2050:</p>
+    {% if birthyear is not None%}
+    {{birthyear}}
+    {% endif %}
+</div>
+{% endblock content %}

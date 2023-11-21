@@ -1,0 +1,98 @@
+.Fonted {
+  font-family: Cascadia Code;
+  font-size: 15pt;
+}
+
+.Home_Button {
+  background-color: rgb(53, 53, 53);
+  width: 80pt;
+  height: 30pt;
+  color: rgb(182, 182, 247);
+  border-top: rgb(250, 109, 109) solid 3pt;
+  border-right: rgb(208, 250, 109) solid 3pt;
+  border-bottom: rgb(109, 229, 250) solid 3pt;
+  border-left: rgb(158, 109, 250) solid 3pt;
+}
+
+.Home_Button:hover {
+  cursor: pointer;
+  background-color: rgb(20, 20, 20);
+  color: rgb(128, 128, 255);
+  border-top: rgb(255, 80, 80) solid 3pt;
+  border-right: rgb(202, 255, 79) solid 3pt;
+  border-bottom: rgb(80, 229, 255) solid 3pt;
+  border-left: rgb(137, 74, 255) solid 3pt;
+}
+
+.Center_the_boi {
+  font-family: Cascadia Code;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.Directory_Box {
+  border: solid 3pt rgb(76, 76, 100);
+  width: 300pt;
+  height: 300pt;
+  background-color: rgb(134, 134, 177);
+  font-size: 20pt;
+}
+
+.Pretty {
+  background-attachment: fixed;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(178, 178, 220),
+    rgb(46, 46, 68)
+  );
+  /*background-color: rgb(178, 178, 220);*/
+}
+
+.Blue_Box {
+  width: 200pt;
+  height: 110pt;
+  background-color: rgb(134, 134, 177);
+  text-align: center;
+  border: solid 3pt rgb(76, 76, 100);
+}
+
+.Blue_Box2 {
+  width: 250pt;
+  height: 300pt;
+  background-color: rgb(134, 134, 177);
+  text-align: center;
+  border: solid 3pt rgb(76, 76, 100);
+  
+}
+
+.Button_fancy {
+  background-color: rgb(63, 63, 85);
+  color: rgb(110, 193, 221);
+  width: 130pt;
+  height: 60pt;
+  font-size: 15pt;
+  border: rgb(76, 148, 243) 3pt;
+  border-style: dashed;
+  transition: 0.5s;
+}
+
+.Button_fancy:hover {
+  width: 230pt;
+  height: 50pt;
+  cursor: pointer;
+  background-color: rgb(72, 72, 173);
+  border-radius: 20pt;
+  color: rgb(146, 157, 255);
+  border-color: rgb(95, 95, 214);
+}
+
+.AnswerDiv {
+  background-color: rgb(96, 96, 139);
+  height: 82pt;
+  border-top: solid rgb(76, 76, 100) 3pt;
+}
+
+.AgeAnswer {
+  color: rgb(99, 243, 231);
+}
