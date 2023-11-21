@@ -59,11 +59,18 @@
 
 .Blue_Box2 {
   width: 250pt;
-  height: 300pt;
+  height: 320pt;
   background-color: rgb(134, 134, 177);
   text-align: center;
   border: solid 3pt rgb(76, 76, 100);
-  
+}
+
+.Blue_Box3 {
+  width: 450pt;
+  height: 200pt;
+  background-color: rgb(134, 134, 177);
+  text-align: center;
+  border: solid 3pt rgb(76, 76, 100);
 }
 
 .Button_fancy {

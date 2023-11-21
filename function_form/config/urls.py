@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 
 
-from app.views import hub_page, Hey_You, Age_in_2050, Order
+from app.views import hub_page, Hey_You, Age_in_2050, Order 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", hub_page, name="hub"),

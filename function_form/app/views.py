@@ -28,4 +28,14 @@ def Age_in_2050(request: HttpRequest):
 
 
 def Order(request: HttpRequest):
-    return render(request, "Order.html")
+    if request.GET:
+        Burger= int(request.GET["Burger"])
+        Fries= int(request.GET["Fries"])
+        Drink= int(request.GET["Drink"])
+        BurgerT = Burger * 4.5
+        FriesT = Fries * 1.5
+        DrinkT = Drink * 1
+        total = BurgerT + FriesT + DrinkT
+        return render(request, "Order.html", {"Burger":Burger,"Fries":Fries,"Drink":Drink,"total":total})
+    else:
+        return render(request, "Order.html")

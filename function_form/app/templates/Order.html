@@ -1,20 +1,21 @@
 {% extends "base.html"%}
 {% block content %}
 <br><br><br>
-<div class="Center_the_boi Blue_Box2">
-    <form action="{% url "AGE" %}" method="GET">
+<div class="Center_the_boi Blue_Box3">
+    <form action="{% url "ORDER" %}" method="GET">
         {% csrf_token %}
         <label>
-            <p></p>
-            <input type="number" name="Burger">
-            <input type="number" name="Fries">
-            <input type="number" name="Drink">
+            <p>Welcome to Good Burger, home of the good burger!</p>
+            <input type="number" name="Burger" placeholder="Burger Amount:">
+            <input type="number" name="Fries" placeholder="Fries Amount:">
+            <input type="number" name="Drink" placeholder="Drink Amount:">
         </label>
+        <br>
         <button>Confirm Order</button>
     </form>
-    <p>Age in 2050:</p>
-    {% if birthyear is not None%}
-    {{birthyear}}
+    <p>total:</p>
+    {% if total is not None%}
+    ${{total}}
     {% endif %}
 </div>
 {% endblock content %}
