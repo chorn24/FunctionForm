@@ -1,0 +1,20 @@
+{% extends "base2.html"%}
+{% block content %}
+<br><br><br>
+<div class="Center_the_boi Red_Box">
+<form action="{% url "FONT" %}" method="GET">
+    {% csrf_token %}
+    <label>
+        <p>String:</p>
+        <input type="text" name="str_1">
+        <p>Repeating length:</p>
+        <input type="number" name="num_1">
+    </label>
+    <br>
+    <button>Submit</button>
+</form>
+{% if result %}
+<p>{{result}}</p>
+{% endif %}
+</div>
+{% endblock content %}

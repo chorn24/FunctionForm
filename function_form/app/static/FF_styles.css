@@ -1,9 +1,157 @@
+
+/* CODINGBAT OVER FORMS VVVV */
+
+.Hub_Button2 {
+  background-color: rgb(53, 53, 53);
+  width: 80pt;
+  height: 30pt;
+  color: rgb(247, 182, 182);
+  border-top: rgb(250, 109, 109) solid 3pt;
+  border-right: rgb(208, 250, 109) solid 3pt;
+  border-bottom: rgb(109, 229, 250) solid 3pt;
+  border-left: rgb(158, 109, 250) solid 3pt;
+}
+
+.Hub_Button2:hover {
+  cursor: pointer;
+  background-color: rgb(20, 20, 20);
+  color: rgb(250, 147, 147);
+  border-top: rgb(255, 80, 80) solid 3pt;
+  border-right: rgb(202, 255, 79) solid 3pt;
+  border-bottom: rgb(80, 229, 255) solid 3pt;
+  border-left: rgb(137, 74, 255) solid 3pt;
+}
+
+
+.Pretty2 {
+  background-attachment: fixed;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(220, 178, 178),
+    rgb(68, 46, 46)
+  );
+}
+
+.Codingbat_box {
+  border: solid 3pt rgb(100, 76, 76);
+  width: 300pt;
+  height: 370pt;
+  background-color: rgb(177, 134, 134);
+  font-size: 20pt;
+}
+
+.Button_fancy2 {
+  background-color: rgb(85, 63, 63);
+  color: rgb(221, 151, 110);
+  width: 130pt;
+  height: 60pt;
+  font-size: 15pt;
+  border: rgb(243, 76, 76) 3pt;
+  border-style: dashed;
+  transition: 0.5s;
+}
+
+.Button_fancy2:hover {
+  width: 230pt;
+  height: 50pt;
+  cursor: pointer;
+  background-color: rgb(173, 72, 72);
+  border-radius: 20pt;
+  color: rgb(255, 146, 146);
+  border-color: rgb(214, 95, 95);
+}
+
+.Red_Box {
+  width: 200pt;
+  height: 240pt;
+  background-color: rgb(177, 134, 134);
+  text-align: center;
+  border: solid 3pt rgb(100, 76, 76);
+}
+
+.Red_Box2 {
+  width: 200pt;
+  height: 280pt;
+  background-color: rgb(177, 134, 134);
+  text-align: center;
+  border: solid 3pt rgb(100, 76, 76);
+}
+
+.Red_Box3 {
+  width: 200pt;
+  height: 400pt;
+  background-color: rgb(177, 134, 134);
+  text-align: center;
+  border: solid 3pt rgb(100, 76, 76);
+}
+
+
+/* OPENING ROOM VVVV */
+
+.Spawn_Room {
+  font-family: Cascadia Code;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(149, 149, 255),
+    rgb(255, 123, 123)
+  );
+}
+
+.Big_Text {
+  font-size: 30pt;
+}
+
+.Directory_Button {
+  width: 200pt;
+  height: 200pt;
+  font-size: 20pt;
+  transition: 0.5s;
+}
+
+.Directory_Button:hover {
+  cursor: pointer;
+  width: 300pt;
+  height: 300pt;
+}
+
+.BluB {
+  background-color: rgb(178, 178, 220);
+  border: solid 3pt rgb(85, 85, 128);
+  transition: 0.5s;
+}
+
+.BluB:hover {
+  box-shadow: -7pt 7pt rgba(94, 94, 126, 0.329);
+}
+
+.RedB {
+  background-color: rgb(220, 178, 178);
+  border: solid 3pt rgb(128, 85, 85);
+  transition: 0.5s;
+}
+
+.RedB:hover {
+  box-shadow: 7pt 7pt rgba(126, 94, 94, 0.329);
+}
+
+.Divorce {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600pt;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+
+/* FUNCTIONS OVER FORMS VVVV*/
+
 .Fonted {
   font-family: Cascadia Code;
   font-size: 15pt;
 }
 
-.Home_Button {
+.Hub_Button {
   background-color: rgb(53, 53, 53);
   width: 80pt;
   height: 30pt;
@@ -14,7 +162,7 @@
   border-left: rgb(158, 109, 250) solid 3pt;
 }
 
-.Home_Button:hover {
+.Hub_Button:hover {
   cursor: pointer;
   background-color: rgb(20, 20, 20);
   color: rgb(128, 128, 255);
@@ -22,6 +170,35 @@
   border-right: rgb(202, 255, 79) solid 3pt;
   border-bottom: rgb(80, 229, 255) solid 3pt;
   border-left: rgb(137, 74, 255) solid 3pt;
+}
+
+.Home_Button {
+  width: 80pt;
+  height: 30pt;
+  background-image: linear-gradient(
+    to right,
+    rgb(119, 119, 233),
+    rgb(190, 84, 84)
+  );
+  color: white;
+  border-left: rgb(137, 74, 255) solid 3pt;
+  border-right: rgb(255, 74, 74) solid 3pt;
+  border-top: rgb(137, 74, 255) solid 3pt;
+  border-bottom: rgb(255, 74, 74) solid 3pt;
+}
+
+.Home_Button:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(59, 59, 119),
+    rgb(99, 43, 43)
+  );
+  color: rgb(197, 165, 255);
+  cursor: pointer;
+  border-left: rgb(89, 0, 255) solid 3pt;
+  border-right: rgb(255, 0, 0) solid 3pt;
+  border-top: rgb(89, 0, 255) solid 3pt;
+  border-bottom: rgb(255, 0, 0) solid 3pt;
 }
 
 .Center_the_boi {
@@ -51,7 +228,7 @@
 
 .Blue_Box {
   width: 200pt;
-  height: 110pt;
+  height: 140pt;
   background-color: rgb(134, 134, 177);
   text-align: center;
   border: solid 3pt rgb(76, 76, 100);

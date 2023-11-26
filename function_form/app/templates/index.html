@@ -1,13 +1,20 @@
-{% extends "base.html" %}
-{% block content %}
-<br><br><br><br><br><br>
-<div class="Center_the_boi Directory_Box">
-    <text>Where to?</text>
-    <br><br>
-    <a href="{% url "HEY" %}"><button class="Button_fancy">Hey, you!</button></a>
-    <br><br>
-    <a href="{% url "AGE" %}"> <button class="Button_fancy">How old in 2050?</button></a>
-    <br><br>
-    <a href="{% url "ORDER" %}"><button class="Button_fancy">Can I take your order?</button></a>
-</div>
-{% endblock content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">  
+        <title>Forms!</title>
+        <link rel="icon" type="image/x-icon">
+        <link rel="stylesheet" href="{% static "FF_styles.css" %}">
+    </head>
+    <body class="Spawn_Room">
+        <h1 class="Big_Text">Django Forms!</h1>
+        <br><br><br><br><br><br><br>
+        <div class="Divorce">
+        <a href="{% url "hub" %}"><button class="Directory_Button BluB">Functions with Forms</button></a>
+        <a href="{% url "CBHub" %}"><button class="Directory_Button RedB">Codingbat with Forms</button></a>
+        </div>
+    </body>
+</html>

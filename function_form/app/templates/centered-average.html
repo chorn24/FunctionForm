@@ -1,0 +1,27 @@
+{% extends "base2.html"%}
+{% block content %}
+<br><br><br>
+<div class="Center_the_boi Red_Box3">
+    <form action="{% url "AVERAGE" %}" method="GET">
+        {% csrf_token %}
+        <label>
+            <p>Insert numbers to find averavge:</p>
+            <input type="number" name="val_1">
+            <input type="number" name="val_2">
+            <input type="number" name="val_3">
+            <input type="number" name="val_4">
+            <input type="number" name="val_5">
+            <input type="number" name="val_6">
+            <input type="number" name="val_7">
+            <input type="number" name="val_8">
+            <input type="number" name="val_9">
+            <input type="number" name="val_10">
+        </label>
+        <br>
+        <button>Submit</button>
+    </form>
+    {% if average is not None%}
+    <p>{{average}}</p>
+    {% endif %}
+</div>
+{% endblock content %}

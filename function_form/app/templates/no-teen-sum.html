@@ -1,0 +1,22 @@
+{% extends "base2.html"%}
+{% block content %}
+<br><br><br>
+<div class="Center_the_boi Red_Box2">
+    <form action="{% url "TEEN"%}" method="GET">
+        {% csrf_token %}
+        <label>
+            <p>First Number:</p>
+            <input type="number" name="int_value1">
+            <p>Second Number:</p>
+            <input type="number" name="int_value2">
+            <p>Third Number:</p>
+            <input type="number" name="int_value3">
+        </label>
+        <br>
+        <button>Submit</button>
+    </form>
+    {% if total is not None%}
+    <p>{{total}}</p>
+    {% endif %}
+</div>
+{% endblock content %}
