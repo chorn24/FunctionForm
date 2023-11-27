@@ -42,7 +42,7 @@ def teen(request:HttpRequest) -> render:
         int_value3 = form.cleaned_data["int_value3"]
 
         def not_teen(n):
-            return n if n not in [13,14,17,18,19] else 0
+            return n if n not in [13,14,15,16,17,18,19] else 0
 
         total = not_teen(int_value1)+not_teen(int_value2)+not_teen(int_value3)
         return render(request, "no-teen-sum.html", {"form":form, "total":total})
@@ -73,19 +73,16 @@ def centered_average(request:HttpRequest) -> render:
         val_5 = form.cleaned_data["val_5"]
         val_6 = form.cleaned_data["val_6"]
         val_7 = form.cleaned_data["val_7"]
-        val_8 = form.cleaned_data["val_8"]
-        val_9 = form.cleaned_data["val_9"]
-        val_10 = form.cleaned_data["val_10"]
 
-        nums = [val_1,val_2,val_3,val_4,val_5,val_6,val_7,val_8,val_9,val_10]
+        if val_6 is None:
+            nums = [val_1,val_2,val_3,val_4,val_5]
+        elif val_7 is None:
+            nums = [val_1,val_2,val_3,val_4,val_5,val_6]
+        else:
+            nums = [val_1,val_2,val_3,val_4,val_5,val_6,val_7]
 
         nums.sort()
-        count = 0
-        total = 0
-        for i in range(1, len(nums) - 1):
-            count += 1
-            total += nums[i]
-        average= total / count
+        average = sum(nums[1:-1]) / (len(nums) - 2)
 
         return render(request, "centered-average.html", {"average":average,"form":form})
     else:
